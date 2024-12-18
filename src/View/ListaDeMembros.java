@@ -7,6 +7,7 @@ package View;
 
 import java.sql.*;
 import Controller.ConnectionProvider;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -43,7 +44,7 @@ public class ListaDeMembros extends javax.swing.JFrame {
                 });
             }
         } catch (Exception e) {
-
+            JOptionPane.showMessageDialog(null, e);
         }
     }
 

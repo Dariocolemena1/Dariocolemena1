@@ -90,6 +90,11 @@ public class HomePage extends javax.swing.JFrame {
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/payment.png"))); // NOI18N
         jMenu4.setText("Pagamento");
+        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu4MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu4);
 
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logout.png"))); // NOI18N
@@ -154,6 +159,10 @@ public class HomePage extends javax.swing.JFrame {
     private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
         new ListaDeMembros().setVisible(true);
     }//GEN-LAST:event_jMenu3MouseClicked
+
+    private void jMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu4MouseClicked
+        new Pagamento().setVisible(true);
+    }//GEN-LAST:event_jMenu4MouseClicked
 
     /**
      * @param args the command line arguments
